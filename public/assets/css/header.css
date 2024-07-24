@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+}
+
+:root {
+    --header--fontsize: 30px;
+    --subheader--fontsize: 2rem;
+    --text--fontsize: 13px;
+    --midium--text--fotsize: 20px;
+    --small--size-fontsize: 14px;
+    --background--color:rgb(255, 255, 255);
+    --primary--color: rgb(163, 163, 163);
+    --secondary--color: rgb(1, 1, 36);
+    --brad--color: blue;
+    --call-to--action: rgb(255, 0, 64);
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 15%;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.connect{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2% 0;
+    width: 70%;
+}
+
+.connect i{
+
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+
+.connect  #tiktok{
+    
+    color: rgb(0, 0, 0);
+     text-shadow: 3px 3px 4px rgb(42,240,234), -3px -3px 5px rgb(222,140,157);
+}
+
+.connect  #insta{
+    
+    background: linear-gradient(10deg, rgba(138, 58, 185), rgba(76, 104, 215), rgba(205, 72, 107), rgba(251, 173, 80), rgba(252, 204, 99), rgba(188, 42, 141), rgba(233, 89, 80),);
+     text-shadow: 3px 3px 4px rgb(42,240,234), -3px -3px 5px rgb(222,140,157);
+}
+
+
+
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    
+    position: relative;
+    max-width: 100%;
+    
+}
+
+.logoname {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    top: 1%;
+    left: 0;
+    
+}
+
+.logoname img {
+    width: 70px;
+    border-radius: 7px;
+}
+
+.head .navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.head .navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.head .navbar ul li .cam {
+    font-size: 30px;
+    min-width: 50px;
+    color: var(--primary--color);
+}
+
+.head .navbar ul li:hover {
+    color: var(--call-to--action);
+}
+
+.head .navbar ul li {
+    margin: 9px;
+    padding: 9px 12px;
+    border-radius: 5px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: .4s linear;
+    position: relative;
+    font-style: italic;
+    font-size: var(--text--fontsize);
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.head .navbar ul li a {
+    color: var(--call-to--action);
+    font-size: var(--text--fontsize);
+    font-weight: 400;
+    transition: .4s linear;
+}
+
+.head .navbar ul li:hover {
+    color: var(--call-to--action);
+    font-weight: 600;
+    background-color: var(--background--color);
+}
+
+.head .navbar ul li a:hover {
+    color: var(--call-to--action);
+    font-weight: 700;
+    transform: scale(1.1);
+}
+
+.head .btn {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    color: var(--call-to--action);
+    margin-left: auto;
+}
+
+
+
+.dropdown-menu {
+    display: none;
+}
+
+.head .navbar li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    background-color: rgb(67, 112, 108);
+    border-radius: 7px;
+}
+
+.dropdown-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    gap: 7px;
+}
+
+.dropdown-menu ul li {
+    width: 150px;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.navbar ul li .dropdown-menu ul li a{
+    color: rgb(0, 0, 0);
+}
+
+.clsnava {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+@media(max-width:950px) {
+    html {
+        font-size: 55%;
+    }
+    .head {
+        padding: 1re 2rem;
+    }
+}
+
+@media(max-width:775px) {
+
+    .logo{
+        padding-top: 20px;
+        margin: auto;
+    }
+    .head {
+        width: 100%;
+    }
+    .head .btn {
+        display: block;
+       
+        font-size: 25px;
+    }
+
+
+
+
+
+    .head .btn i{
+        color: var(--call-to--action);
+    }
+
+
+    .head .btnii{
+        margin-left: auto;
+        
+    }
+    
+    .head .navbar {
+        /*  need to chage  visibility to hidden */
+        visibility: hidden;
+        position: absolute;
+        top: 2%;
+        margin-bottom: 5%;
+        right: 2%;
+        margin-top: 10%;
+        width: 80%;
+        transition: .3s linear;
+        border-radius: 12px;
+        background:var(--primary--color);
+    }
+    .head .navbar .clsbtn {
+        position: relative;
+        margin-left: 7px;
+        margin-top: 3px;
+    }
+    .head .navbar ul {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 12px;
+    }
+
+    .logoname{
+        margin-left: -30px;
+    }
+
+  
+    .logoname img {
+        width: 40px;
+    }
+    .head .navbar ul li {
+        border-radius: 12px;
+        position: relative;
+        width: 85%;
+        margin-top: 5px;
+        padding: 9px 0;
+        color: rgb(0, 0, 0);
+        background: var(--background--color);
+        z-index: 1;
+    }
+    .head .navbar li:hover {
+        background-color: var(--primary--color);
+        color: blue;
+    }
+    .head .logo {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .head .navbar li:hover .dropdown-menu {
+        background: transparent;
+    }
+    .dropdown-menu {
+        display: none;
+    }
+    .head .navbar li:hover .dropdown-menu {
+        display: block;
+        position: relative;
+        background-color: black;
+        border-radius: 7px;
+        margin: 7px 3px;
+    }
+    .fa {
+        position: absolute;
+        right: 5%;
+        top: 10%;
+    }
+
+
+    .connect i{
+        font-size: 14px;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    
+    
+}

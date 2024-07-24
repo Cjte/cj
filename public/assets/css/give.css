@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background--color:rgb(255, 255, 255);
+    --primary--color: rgb(163, 163, 163);
+    --secondary--color: rgb(1, 1, 36);
+    --brad--color: blue;
+    --call-to--action: rgb(255, 0, 64);
+    --main--header-forntsize: 35px;
+    --big--header-forntsize: 52px;
+    --sub--header-forntsize: 30px;
+    --midium--text--fotsize: 20px;
+    --small--size-fontsize: 17px;
+    --xxsmall--size-fontsize: 19px;
+    --mobile-fontsize: 14px;
+    --font: 'Chiller';
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to top, rgb(250, 250, 113), rgb(192, 192, 85));
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 251, 253);
+}
+
+body {
+    background:  var(--background--color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+.give{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10% auto;
+    
+}
+
+.givebunner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3% auto;
+    background-color: var(--primary--color);
+    border-radius: 12px;
+    padding: 20px 10px;
+    text-align: center;
+
+}
+
+.givebunner h3{
+    font-size: var(--sub--header-forntsize);
+    font-family: var(--font);
+    margin-bottom: 12px;
+}
+
+.givebunner p{
+
+    font-size: var(--xxsmall--size-fontsize);
+    font-family: var(--font);
+
+}
+
+
+@media(max-width:800px){
+    .paybill{
+        width: 96%;
+    }
+
+    .paybill img{
+        width: 100%;
+
+        
+    }
+
+}

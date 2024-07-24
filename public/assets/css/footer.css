@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer {
+    background: rgb(108, 109, 122);
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer h1 {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgb(164, 3, 185);
+    margin-top: 15px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.ctn li {
+    margin: 4px 10px;
+
+  
+}
+
+
+.ctn li span {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+    margin-left: 10px;
+    text-shadow: 1px 7px 10px rgb(255, 3, 108);
+}
+
+.socialmidea ul li {
+    margin: 17px 2px;
+}
+
+.socialmidea li a {
+    color: rgb(2, 2, 2);
+    font-weight: 400;
+    text-shadow: 1px 7px 10px rgb(255, 3, 108);
+    font-size: 14px;
+    margin-top: -5px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all .3s linear;
+    text-align: center;
+}
+
+.socialmidea ul li a :hover {
+    text-shadow: 2px 4px 14px rgb(255, 230, 3), 4px 8px 20px rgb(255, 3, 3);
+    cursor: pointer;
+}
+
+.links .lnks li {
+    margin: 22px 4px;
+    transition: all .3s linear;
+    font-size: 10px;
+}
+
+.links .lnks li:hover {
+    transform: scale(1.1);
+}
+
+.links .lnks li a {
+    color: rgb(209, 209, 209);
+    font-weight: 400;
+    text-shadow: 1px 7px 10px rgb(255, 3, 108);
+    font-size: 10px;
+    font-style: italic;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.others .lgl i{
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+      display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-direction: column;
+    
+}
+
+.others h1 {
+    font-size: 14px;
+    color: rgb(255, 0, 64);
+    font-family: 'ink free';
+    text-shadow: none;
+    text-align: center;
+}
+
+.others h1::first-letter,
+.others h1 span {
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.others .lgl h2 {
+    color: white;
+    font-family: 'ink free';
+    font-style: italic;
+    text-align: center;
+}
+
+.others .lgl h3 {
+    color: antiquewhite;
+    font-size: 14px;
+    font-family: 'ink free';
+    font-style: italic;
+    text-align: center;
+}
+
+.others .lgl img{
+    width:100px;
+}
+
+.others h4 {
+    font-size: 12px;
+    color: rgb(43, 43, 43);
+    text-align: center;
+}
+
+.copyright {
+    padding: 15px 4px;
+}
+
+.others .lgl img{
+    width:150px;
+    
+   
+}
+
+.copyright h3 {
+    text-align: center;
+    font-size: 19px;
+}
+
+.copyright h3 span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.copyright h4 {
+    text-align: center;
+    font-size: 13px;
+}
+
+
+@media(max-width: 540px) {
+
+.socialmidea{
+    
+
+}
+
+}

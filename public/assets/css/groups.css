@@ -1,0 +1,29 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --basic-color: rgba(3, 3, 179);
+    --primary-color: rgba(201, 3, 201);
+    --main-header-forntsize: 35px;
+    --big-header-forntsize: 48px;
+    --sub-header-forntsize: 30px;
+    --midium-text--fotsize: 20px;
+    --small-size-fontsize: 15px;
+    --xxsmall-size-fontsize: 17px;
+    --mobile-fontsize: 14px;
+    --font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background: linear-gradient(10deg, rgba(3, 3, 179), rgba(201, 3, 201));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden;
+}

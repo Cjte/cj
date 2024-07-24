@@ -1,0 +1,491 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background--color:rgb(255, 255, 255);
+    --primary--color: rgb(163, 163, 163);
+    --secondary--color: rgb(1, 1, 36);
+    --brad--color: blue;
+    --call-to--action: rgb(255, 0, 64);
+    --main-header-forntsize: 35px;
+    --big-header-forntsize: 48px;
+    --sub-header-forntsize: 30px;
+    --midium-text--fotsize: 20px;
+    --small-size-fontsize: 15px;
+    --xxsmall-size-fontsize: 17px;
+    --mobile-fontsize: 14px;
+    --font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background: var(--background--color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.topsec{
+    height: 20vh;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    background: linear-gradient(45deg, rgba(0, 0, 12, 0.486), rgba(22, 0, 22, 0.486)), url(cssimg/contact.jpeg);
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--call-to--action);
+    background-size: cover;
+    font-size: var(--main-header-forntsize);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visitus{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    column-gap: 10%;
+    width: 96%;
+    margin-top: 3%;
+    
+}
+
+.joinus{
+    flex: 1;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    top: 1px;
+    height: 90%;
+    overflow: hidden;
+    margin-bottom: 5%;
+    
+    
+}
+
+.join{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 7px;
+    
+    overflow: hidden;
+    background: var(--primary--color);
+    backdrop-filter: blur(7px);
+    border-radius: 14px;
+    padding: 30px 20px;
+}
+
+.join input{
+    display: block;
+    margin:4px 0 ;
+    height: 37px;
+    
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.join input:hover{
+    background-color: rgba(133, 133, 133, 0.692);
+    color: black;
+}
+
+.join h1{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--basic-color);
+}
+
+
+
+
+.join button{
+    
+    margin-left: 25%;
+    width: 150px;
+    padding: 6px 12px;
+    font-size: var(--small-size-fontsize);
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--call-to--action);
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    transition: .3s linear;
+ }
+ 
+ 
+ 
+ .alter {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+     text-transform: capitalize;
+     margin: 7px 0;
+     padding: 4px 6px;
+     font-weight: 600;
+     background: var(--primary--color);
+     backdrop-filter: blur(7px);
+     border-radius: 14px;
+     padding: 30px 20px;
+     color: red;
+     line-height: 22px;
+     font-size: var(--mobile-fontsize);
+     letter-spacing: 1px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-style: italic;
+     border-radius: 6px;
+ }
+ 
+ .jContent h3{
+    font-size: var(--sub-header-forntsize);
+    font-family: var(--font);
+
+ }
+ .jContent p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: var(--small-size-fontsize);
+ }
+
+ .visitcontent{
+    overflow: auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+ }
+
+
+ .vicithead{
+    margin-top: 4%;
+    margin-bottom: 9%;
+
+ }
+
+
+ .vicithead h2{
+    font-size: var(--big-header-forntsize);
+    font-family: var(--font);
+    text-align: center;
+
+ }
+
+.expectations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4%;
+    margin-bottom:15%;
+    position: relative;
+}
+.expectations img{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    
+    
+ }
+
+
+
+
+ .expcont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+    
+ }
+ .expcont h2{
+    font-size: var(--main-header-forntsize);
+    font-family: var(--font);
+    margin-bottom: 30px;
+    background-color: var(--primary--color);
+    padding: 7px 5px;
+    
+ }
+
+
+ .expcont h4{
+    font-family: var(--font);
+    font-size: var(--xxsmall-size-fontsize);
+    font-style: italic;
+    letter-spacing: 1.5px;
+    line-height: 18px;
+    margin: 10px 0;
+
+ }
+
+ .expcont p{
+    font-family: var(--font);
+    font-size: var(--small-size-fontsize);
+    
+    letter-spacing: 1.5px;
+    line-height: 18px;
+    
+ }
+
+.expcont .believe{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.expcont .wear{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+
+}
+
+.expcont .place{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+
+}
+
+.expcont button{
+    border-radius: 20px;
+    padding: 10px 7px;
+    margin-top: 20px;
+    border: none;
+    background-color: aliceblue;
+    transition: .3s linear;
+}
+
+.expcont button a{
+    font-size: var(--small-size-fontsize);
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--call-to--action);
+    transition: .7s linear;
+}
+
+.expcont button:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:1000px) {
+    .visitus{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .joinus{
+        position: relative;
+        flex-direction: row;
+        column-gap: 5%;
+        width: 90%;
+       
+    }
+
+    .join{
+       min-width: 60%;
+
+    }
+
+    .visitcontent{
+        width: 96%;
+        margin: 20px auto;
+    }
+    .expectations img{
+        width: 70%;
+        height: 120%;
+    }
+
+
+    .expcont h2{
+        font-size: 26px;
+    }
+
+
+    .expcont p{
+        font-size: var(--mobile-fontsize);
+        line-height: normal;
+    }
+
+    .expcont h4{
+        font-size: var(--mobile-fontsize);
+    }
+    .meet{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+
+    }
+
+    .expcont .believe{
+        position: absolute;
+        top: 20%;
+        left: 25%;
+    }
+    
+    .expcont .wear{
+        position: absolute;
+        top: 20%;
+        right: 20%;
+    
+    }
+    
+    .expcont .place{
+        position: absolute;
+        top: 15%;
+        left: 15%;
+    
+    }
+    
+}
+
+@media(max-width:700px) {
+
+    .joinus{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto-;
+    }
+    .join{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+
+    .expectations img{
+        width: 50%;
+        min-height: 150px;
+        object-fit: cover;
+    }
+
+    .expcont h2{
+        font-size: 18px;
+    }
+
+
+    .meet{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+
+    }
+
+    .expcont .believe{
+        position: absolute;
+        top: 10%;
+        left: 25%;
+    }
+    
+    .expcont .wear{
+        position: absolute;
+        top: 10%;
+        right: 20%;
+    
+    }
+    
+    .expcont .place{
+        position: absolute;
+        top: 15%;
+        left: 15%;
+    
+    }
+    
+
+}
+
+@media(max-width:620px){
+
+    .expectations img{
+        width: 50%;
+        min-height: 200px;
+        object-fit: cover;
+    }
+
+    .meet{
+        position: absolute;
+        top: 0%;
+        left: 50%;
+
+    }
+
+    .expcont .believe{
+        position: absolute;
+        top: -5%;
+        left: 50%;
+    }
+    
+    .expcont .wear{
+        position: absolute;
+        top: -1%;
+        right: 60%;
+    
+    }
+    
+    .expcont .place{
+        position: absolute;
+        top: -5%;
+        left: 40%;
+    
+    }
+
+
+    .expcont h2{
+        font-size: 16px;
+        
+    }
+
+    .joinus{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .join input{
+        width: 90%;
+    }
+
+    .join button{
+        width: 50%;
+        margin-left: 0;
+
+
+    }
+    .join form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .alter{
+        width: 80%;
+    }
+
+    .vicithead h2{
+        font-size: var(--sub-header-forntsize);
+    }
+
+}
+

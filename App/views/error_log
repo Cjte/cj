@@ -1,0 +1,12 @@
+[16-Mar-2024 16:01:14 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT" in /home/dwqovdmx/public_html/App/views/about.view.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/dwqovdmx/public_html/App/views/about.view.php on line 7
+[16-Mar-2024 16:01:15 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT" in /home/dwqovdmx/public_html/App/views/about.view.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/dwqovdmx/public_html/App/views/about.view.php on line 7
+[16-Mar-2024 16:03:41 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ROOT" in /home/dwqovdmx/public_html/App/views/about.view.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/dwqovdmx/public_html/App/views/about.view.php on line 7

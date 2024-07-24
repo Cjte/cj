@@ -1,0 +1,298 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background--color:rgb(255, 255, 255);
+    --primary--color: rgb(163, 163, 163);
+    --secondary--color: rgb(1, 1, 36);
+    --brad--color: blue;
+    --call-to--action: rgb(255, 0, 64);
+    --main--header-forntsize: 35px;
+    --big--header-forntsize: 52px;
+    --sub--header-forntsize: 30px;
+    --midium--text--fotsize: 20px;
+    --small--size-fontsize: 17px;
+    --xxsmall--size-fontsize: 19px;
+    --mobile-fontsize: 14px;
+    --basic-font:'Chiller';
+}
+
+body {
+    background: var(--background--color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.ourhistory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14%;
+    margin-top: 7%;
+}
+
+.history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(10deg, rgba(31, 31, 31, 0.575), rgba(78, 78, 78, 0.658));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(9);
+    border-radius: 7px;
+    width: 90%;
+    padding: 10% 5px;
+}
+
+.history h2 {
+    font-size: var(--big--header-forntsize);
+    color: rgb(0, 0, 0);
+    text-decoration: overline;
+    text-align: center;
+}
+
+.history p {
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(124, 123, 123);
+    letter-spacing: 1.5px;
+    text-align: center;
+    width: 90%;
+    line-height: 30px;
+    font-family: var(--basic-font);
+    font-size: var(--small-size-fontsize);
+}
+
+@media(max-width:500px) {
+    .history {
+        width: 95%;
+    }
+}
+
+.Ourabout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visionmission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.aboutheaders {
+    width: 40%;
+}
+
+.aboutheaders h1 {
+    font-size: var(--main-header-forntsize);
+    color: rgb(0, 0, 0);
+    font-family: var(--basic-font);
+    margin-bottom: 7%;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.aboutheaders h4 {
+    font-size: var(--midium--text--fotsize);
+    font-family: var(--basic-font);
+    margin-top: 3%;
+}
+
+.aboutheaders h3 {
+    font-size: var(--sub-header-forntsize);
+    margin-top: 5%;
+    line-height: 23px;
+    letter-spacing: 1px;
+    font-family: var(--basic-font);
+    margin-left: 10%;
+}
+
+.aboutheaders p {
+    font-size: var(--mobile-fontsize);
+    font-family: var(--basic-font);
+    margin-top: 17px;
+    width: 85%;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 1.2px;
+}
+
+.visionimage {
+    width: 55;
+}
+
+.visionimage img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.contentvision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contentvision h5 {
+    align-self: flex-start;
+    font-size: var(--midium--text--fotsize);
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: overline;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 12%;
+    padding: 7px 0;
+}
+
+.contentvision p {
+    margin: 7px 0;
+    color: rgb(0, 0, 0);
+    font-size: var(--mobile-fontsize);
+    font-family: var(--basic-font);
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 1.2px;
+}
+
+@media(max-width:1000px) {
+    .aboutheaders h1 {
+        font-size: var(--sub-header-forntsize);
+        text-align: center;
+    }
+    .aboutheaders h4 {
+        font-size: var(--xxsmall-size-fontsize);
+        text-align: center;
+    }
+    .aboutheaders h3 {
+        font-size: var(--midium-text--fotsize);
+        text-align: center;
+    }
+    .aboutheaders p {
+        text-align: center;
+        font-weight: 100;
+        letter-spacing: normal;
+        width: 97%;
+    }
+}
+
+@media(max-width:630px) {
+    .visionmission {
+        flex-direction: column;
+        width: 100%;
+    }
+    .visionimage {
+        width: 95%;
+    }
+    .aboutheaders {
+        margin-bottom: 20px;
+        width: 95%;
+    }
+}
+
+
+/**** our location  ****/
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    margin: 10% 0;
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    gap: 5%;
+}
+
+.locheaders h1 {
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: var(--sub--header-forntsize);
+    margin-bottom: 15%;
+    font-family: var(--basic-font);
+}
+
+.locheaders p {
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    margin-bottom: 20%;
+    font-size: var(--small-size-fontsize);
+    color: rgb(0, 0, 0);
+    font-family: var(--basic-font);
+}
+
+.locgps iframe {
+    border-radius: 6px;
+}
+.locgps{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.locgps iframe{
+    width: 100%;
+
+}
+
+@media(max-width:830px) {
+    .loc {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .locgps{
+        width: 100%;
+        
+        margin-right: 2%;
+        
+    }
+    .locheaders h1 {
+        margin-top: 5%;
+    }
+
+    .locheaders p{
+        text-align: center;
+    }
+    .locgps {
+        width: 100%;
+    }
+    .locgps iframe {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

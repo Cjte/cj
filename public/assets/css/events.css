@@ -1,0 +1,116 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background--color:rgb(255, 255, 255);
+    --primary--color: rgb(163, 163, 163);
+    --secondary--color: rgb(1, 1, 36);
+    --brad--color: blue;
+    --call-to--action: rgb(255, 0, 64);
+    --main-header-forntsize: 35px;
+    --big-header-forntsize: 48px;
+    --sub-header-forntsize: 30px;
+    --midium-text--fotsize: 20px;
+    --small-size-fontsize: 15px;
+    --xxsmall-size-fontsize: 17px;
+    --mobile-fontsize: 14px;
+    --font: 'Chiller';
+}
+
+body {
+    background: var(--background--color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.eventcont{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    min-height: 60vh;
+    background: var(--primary--color);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    padding: 5% 0;
+    margin-bottom: 7%;
+    margin-top: 2%;
+}
+
+.evt{
+    min-width: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.events{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 7% 0;
+
+}
+
+.date{
+    margin-bottom: 30%;
+}
+
+.events .eventcont h4{
+    font-size: var(--midium-text--fotsize);
+    font-family: var(--font);
+    text-align: center;
+}
+
+.events .eventcont p{
+    font-family: var(--font);
+    text-align: center;
+    line-height: 26px;
+
+}
+
+.header h1{
+    font-size: var(--sub-header-forntsize);
+    color: var(--call-to--action);
+    font-family: var(--font);
+    text-shadow: 3px 3px 2px whitesmoke, -3px -3px 5px black;
+
+}
+
+ 
+@media(max-width:780px) {
+
+    .eventcont{
+        width: 90%;
+    }
+    .evt{
+       
+       
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 20px;
+        column-gap: 50px;
+      
+    }
+
+    .date{
+        margin-top: 30px;
+        
+    }
+    
+}

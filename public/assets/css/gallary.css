@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background--color:rgb(255, 255, 255);
+    --primary--color: rgb(163, 163, 163);
+    --secondary--color: rgb(1, 1, 36);
+    --brad--color: blue;
+    --call-to--action: rgb(255, 0, 64);
+    --main--header-forntsize: 35px;
+    --big--header-forntsize: 52px;
+    --sub--header-forntsize: 30px;
+    --midium--text--fotsize: 20px;
+    --small--size-fontsize: 17px;
+    --xxsmall--size-fontsize: 19px;
+    --mobile-fontsize: 14px;
+    --font: 'Chiller';
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to top, rgb(250, 250, 113), rgb(192, 192, 85));
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 251, 253);
+}
+
+body {
+    background: var(--background--color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.gallary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    margin: 20px auto;
+    background-color: var(--primary--color);
+    column-gap: 3%;
+    padding: 20px 5px;
+    flex-wrap: wrap;
+    border-radius: 12px;
+}
+
+.gallaryimage{
+    min-width: 250px;
+    width: 30%;
+    height: 500px;
+    background: rgb(255, 222, 160);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    
+}
+
+.gallaryimage .image{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.gallaryimage .image img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.gallaryimage .imagedisc{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.gallaryimage .imagedisc h3{
+    font-size: var(--midium--text--fotsize);
+    font-family: var(--font);
+    text-align: center;
+
+}
+
+.gallaryimage .imagedisc p{
+    font-size: var(--mobile-fontsize);
+    font-family: var(--font);
+    text-align: center;
+
+}
+
+
+
+
+@media(max-width:540px){
+
+    .gallaryimage{
+        width: 100%;
+        min-width: 150px;
+    }
+
+
+
+}
